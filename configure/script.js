@@ -7,7 +7,7 @@ const urlParams = new URLSearchParams(queryString);
 
 const code = urlParams.get("code") || "";
 
-const baseURL = "https://nuttylmao.github.io/spotify-widget";
+const baseURL = "https://mans-spotify-overlay2.vercel.app/";
 const redirect_uri = `${baseURL}/configure`;
 let refresh_token = "";
 let access_token = "";
@@ -122,10 +122,4 @@ function CopyToURL() {
     }, 3000);
 }
 
-function OpenInstructions() {
-    window.open("https://nuttylmao.notion.site/Spotify-Widget-18e19969b237807ca88cfc9c4159da15", '_blank').focus();
-}
 
-function OpenDonationPage() {
-    window.open("http://nutty.gg/pages/donate", '_blank').focus();
-}
