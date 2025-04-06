@@ -7,7 +7,7 @@ const urlParams = new URLSearchParams(queryString);
 
 const code = urlParams.get("code") || "";
 
-const baseURL = "https://mns980.github.io";
+const baseURL = "https://mns980.github.io/mans_spotify_overlay2";
 const redirect_uri = `${baseURL}/configure`;
 let refresh_token = "";
 let access_token = "";
